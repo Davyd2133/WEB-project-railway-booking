@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function TrainCard({ train }) {
-  return (
+  return ( 
     <div className="card">
       <h2>Потяг {train.number}</h2>
 
