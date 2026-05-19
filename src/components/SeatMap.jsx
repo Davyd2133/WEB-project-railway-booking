@@ -3,7 +3,7 @@ import BookingForm from "./BookingForm";
 
 function SeatMap({ wagon, trainId }) {
   const seats = Array.from({ length: 24 }, (_, i) => i + 1);
-
+  
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [bookedSeats, setBookedSeats] = useState([]);
 
