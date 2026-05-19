@@ -1,9 +1,14 @@
-import { useState } from "react";
-import trains from "../data/trains";
+import { useEffect, useState } from "react";
+import { getTrains } from "../services/BookingService";
 import TrainCard from "./TrainCard";  
 
 function TrainList() {
+  const [trains, setTrains] = useState([]);
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+  getTrains().then((data) => setTrains(data));
+}, []);
 
   const filteredTrains = trains.filter((train) => {
     const text = `${train.number} ${train.from} ${train.to}`.toLowerCase();
