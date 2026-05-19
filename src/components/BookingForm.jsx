@@ -7,7 +7,7 @@ function BookingForm({
   setBookedSeats,
   trainId,
   wagon,
-  setSelectedSeats,
+  setSelectedSeats,   
 }) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
