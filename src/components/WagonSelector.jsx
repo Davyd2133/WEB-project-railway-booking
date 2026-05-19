@@ -3,7 +3,7 @@ import SeatMap from "./SeatMap";
 
 function WagonSelector({ train }) {
   const [selectedWagon, setSelectedWagon] = useState(train.wagons[0]);
-
+  
   return (
     <div>
       <h2>Оберіть вагон</h2>
