@@ -1,6 +1,6 @@
 import { useState } from "react";
 import trains from "../data/trains";
-import TrainCard from "./TrainCard";
+import TrainCard from "./TrainCard";  
 
 function TrainList() {
   const [search, setSearch] = useState("");
